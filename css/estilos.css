@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Quicksand', sans-serif;; 
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100%;
+    background: white;
+}
+
+.nav__div__a--logo{
+    font-weight: 200;
+    font-size: 1.5em;
+    transition: 200ms ease;
+    margin-left: 5px;
+    font-style: italic;
+    color: rgb(253, 253, 253) !important;
+}
+.nav__div__a--logo span{
+    font-weight: 500;
+    margin-left: -5px;
+    font-style: normal;
+    color: rgb(108, 171, 221);
+}
+
+/*acá no podía hacerle un hover cambiando el color a la imagen, así que una solución que me terminó gustando más fue usar el brillo*/
+.navbar-brand{
+    filter: brightness(85%);
+    transition: 200ms ease;
+}
+.navbar-brand:hover{
+    filter: brightness(100%);
+}
+
+.navbar,
+.footer{
+    background-color: rgb(28, 44, 91);
+}
+
+
+
+.nav-link{
+    transition: 200ms ease;
+}
+
+.nav-link:hover{
+    color: rgb(255, 198, 89) !important;
+}
+
+
+nav div ul a{
+    margin-right: 15px;
+}
+
+.nav__div__img{
+    height: 2.4rem;
+    transform: translateY(-3px);
+    margin-right: 10px;
+}
+
+.li__a__ico{
+    margin-right: 6px;
+}
+
+/* le saqué el borde y box-shadow que se mostraba al clickear el botón de menú */
+.navbar-toggler{
+    border: none;
+    transition: 200ms ease;
+}
+.navbar-toggler:hover{
+    color:rgb(255, 198, 89);
+}
+.navbar-toggler i{
+    transform: scale(1.5);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 96%;
+    box-shadow: 0 3px 10px rgb(92, 92, 92);
+}
+
+
+main{
+    min-height: 80vh;
+    margin-top: 15vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__div1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__div2{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__p4{
+    margin-bottom: -15px;
+}
+
+.aFooter{
+    color: rgb(108, 171, 221);
+    text-decoration: none;
+    transition: 200ms ease;
+}
+
+.aFooter:hover{
+    color: rgb(255, 198, 89);
+}
+
+.aRedes{
+    color: white;
+    transition: 200ms ease;
+    font-size: 3em;
+    padding: 20px;
+}
+
+
+
+.aRedes:hover{
+    color: rgb(255, 198, 89);
+}
