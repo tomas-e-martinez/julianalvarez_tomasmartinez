@@ -131,7 +131,9 @@ main{
 }
 
 .inputTextForm:focus{
-    outline: none;
+    outline: solid 2px rgb(108, 171, 221);
+    box-shadow: none;
+    border-radius: 5px;
 }
 
 .formCheckboxDiv{
