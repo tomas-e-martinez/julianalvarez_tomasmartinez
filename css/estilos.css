@@ -8,7 +8,7 @@
 
 .body{
     min-height: 100%;
-    background-color: rgb(108, 171, 221);
+    background: linear-gradient(rgb(108, 171, 221), rgb(84, 154, 211));
 }
 
 .nav__div__a--logo{
@@ -91,6 +91,38 @@ main{
     margin-top: 12vh;
 }
 
+.welcomeImg{
+    width: 90%;
+    height: 50vh;
+    object-fit: cover;
+    filter: brightness(70%);
+    box-shadow: 0 2px 2px rgb(58, 58, 58);
+}
+
+.tituloContenedor{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.titulo{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    padding: 8px 5vw 8px 5vw;
+    z-index: 998;
+}
+
+.subtitulo{
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    color: white;
+    margin-top: -10px;
+    padding: 2px 30px 2px 30px;
+}
+
 .containerContacto{
     background-color: white;
     box-shadow: 0 2px 2px rgb(44,44,44);
@@ -146,6 +178,7 @@ main{
 
 .formButtonsDiv{
     flex-direction: row !important;
+    justify-content: center;
     margin-top: 30px !important;
 }
 
@@ -164,12 +197,13 @@ main{
 }
 
 .formButtonReset:hover{
-    background-color: black;
-    color: white;
+    background-color: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
 }
 
 .formButtonSubmit{
-    background-color: rgb(255, 198, 89);
+    background-color: rgb(28, 44, 91);
+    color: white;
     border: none;
     box-shadow: 0 3px 3px grey;
     font-size: 1.2em;
@@ -178,14 +212,50 @@ main{
 }
 
 .formButtonSubmit:hover{
-    background-color: rgb(28, 44, 91);
-    color: white;
+    background-color: rgb(255, 198, 89);
+    color: black;
 }
 
 
 
 
+.mediosCard{
+    height: 95%;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 0;
+    box-shadow: 0 1px 2px grey;
+    padding: 10px;
+    
+}
 
+.mediosCardPMedio{
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.mediosCardImg{
+    height: 60%;
+    object-fit: cover;
+}
+
+.aMediosCard{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 1px 2px rgb(88, 88, 88);
+    border-radius: 5px;
+    font-size: 1.3em;
+    padding: 5px 15px 5px 15px;
+    font-weight: 200;
+    transition: 150ms ease;
+}
+
+.aMediosCard:hover{
+    color: black;
+    background-color:rgb(255, 198, 89) ;
+}
 
 
 
