@@ -130,8 +130,76 @@ main{
 }
 
 .imgBio{
-    width: 90%;
+    width: 75%;
+    height: 45vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    object-fit: cover;
+    box-shadow: 0 2px 2px rgb(44, 44, 44);
 }
+
+@media only screen and (max-width: 767px) {
+    .imgBio {
+        width: 100%;
+    }
+    
+}
+
+.imgBioCol12{
+    height: 75vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .imgBioCol12 {
+        height: 45vh;
+    }
+    
+}
+
+
+
+.pBio{
+    padding: 10px 0 20px;
+    width: 75%;
+    margin: 10px auto ;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .pBio {
+        font-size: 1.1em;
+    }
+}
+
+.divH2Bio{
+}
+
+.h2Bio{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    padding: 8px 5vw 8px 5vw;
+    width: 60%;
+    margin: 0 auto 5vh;
+    font-size: 2rem;
+}
+
+.h3Bio{
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    margin: auto;
+    width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+    .h3Bio {
+        width: 100%;
+    }
+}
+
 
 .imgEstadisticas{
     width: 80%;
