@@ -95,8 +95,9 @@ main{
     width: 90%;
     height: 50vh;
     object-fit: cover;
-    filter: brightness(70%);
-    box-shadow: 0 2px 2px rgb(58, 58, 58);
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgb(58, 58, 58);
 }
 
 .tituloContenedor{
@@ -130,12 +131,14 @@ main{
 }
 
 .imgBio{
+    padding: 5px;
+    background-color: white;
     width: 75%;
     height: 45vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
     object-fit: cover;
-    box-shadow: 0 2px 2px rgb(44, 44, 44);
+    box-shadow: 0 2px 5px rgb(44, 44, 44);
 }
 
 @media only screen and (max-width: 767px) {
@@ -295,6 +298,94 @@ main{
 
 
 
+.sectionSorteo{
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    width: 85%;
+    margin: 5vh auto;
+    padding: 5vh 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.formSorteo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imgSorteo{
+    width: 75%;
+    height: 50vh;
+    object-fit: cover;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    margin-bottom: 5vh;
+    align-self: center;
+}
+
+@media only screen and (max-width: 815px) {
+    .imgSorteo {
+        width: 100%;
+    }
+    
+}
+
+.formSorteoDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formSorteoDiv div{
+    flex-basis: 35%;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.labelSorteo{
+    flex-basis: 100% !important;
+}
+
+.inputFormSorteo{
+    border: none;
+    background-color: rgb(247, 247, 247);
+    box-shadow: inset 0 1px 2px grey;
+    padding-left: 5px;
+    resize: none;
+}
+
+.inputFormSorteo:focus{
+    outline: solid 2px rgb(108, 171, 221);
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.textAreaFormSorteo{
+    width: 40vw;
+    height: 20vh;
+}
+
+@media only screen and (max-width: 815px) {
+    .textAreaFormSorteo {
+        width: 60vw;
+    }
+    
+}
+
+.formCheckboxDivContenedor{
+    margin-top: 3vh;
+}
+
+.formCheckboxDiv{
+    margin-top: 10px;
+}
+
+
+
 
 
 
@@ -430,6 +521,96 @@ main{
     background-color:rgb(255, 198, 89) ;
 }
 
+/*
+.contenedorDivProximo{
+    width: 50%;
+    height: 10vh;
+}
+
+.divTextoProximoEncuentro{
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.divTextoProximoEncuentro h3{
+    background-color: aqua;
+}
+
+.divTextoProximoEncuentro p{
+    background-color: antiquewhite;
+}
+
+.divLogosVs{
+    flex-basis: 50%;
+    justify-content: space-evenly;
+}
+
+.vs{
+    font-size: 2em;
+    align-self: center;
+    font-weight: 500;
+}
+
+.logoEquipos{
+    height: 10.5vh;
+    align-self: center;
+    object-fit: contain;
+}*/
+
+.videoWelcome{
+    width: 85%;
+    height: 65vh;
+    object-fit: cover;
+    box-shadow: 0 2px 5px grey;
+    background-color: white;
+    padding: 5px;
+}
+
+.asideNoticias{
+}
+
+.imgNoticias{
+    width: 85%;
+    height: 65vh;
+    object-fit: cover;
+    box-shadow: 0 2px 5px grey;
+    z-index: -1;
+    padding: 5px;
+    background-color: white;
+}
+
+.h2Noticias{
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: -20px;
+    font-weight: 600;
+}
+
+.imgNoticiasCard{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.divNoticiasCard{
+}
+
+.noticiasCard{
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    margin-top: 50px;
+}
+
+.divNoticiasCardTexto{
+    padding: 20px;
+}
+
+.tituloNoticiasCard{
+    font-size: 1.5rem;
+}
 
 
 
@@ -439,7 +620,95 @@ main{
 
 
 
+.contenedorDivCamiseta{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
 
+.contenedorDivCamiseta h3{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    padding: 8px 5vw 8px 5vw;
+}
+
+.contenedorDivCamiseta a{
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    color: white;
+    margin-top: -10px;
+    padding: 2px 30px 2px 30px;
+}
+
+
+.divCamisetas{
+    background: white;
+    box-shadow: 0 2px 5px grey;
+    padding: 5vh 0 0 0;
+    margin: auto;
+    width: 90%;
+}
+
+@media only screen and (max-width: 815px) {
+    .divCamisetas {
+        width: 100%;
+    }
+    
+}
+
+
+.divCamisetasPng{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto 5vh;
+}
+
+.aCamisetasPng{
+}
+
+.camisetasPng{
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0 2px 5px grey;
+}
+
+.divPCamisetas{
+    width: 90%;
+    margin: auto;
+}
+
+.divPCamisetas p{
+    font-size: 1.1rem;
+}
+
+.divPCamisetas p a{
+    color: rgb(108, 171, 221);
+    text-decoration: none;
+    transition: 200ms ease;
+    font-weight: 500;
+}
+
+.divPCamisetas p a:hover{
+    color: rgb(255, 198, 89);
+}
+
+.iframeMapa{
+    margin: 5vh 0;
+    width: 60%;
+    box-shadow: 0 2px 5px grey;
+}
+
+@media only screen and (max-width: 815px) {
+    .iframeMapa {
+        width: 90%;
+    }
+    
+}
 
 
 

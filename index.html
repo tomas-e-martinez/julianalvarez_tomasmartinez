@@ -41,127 +41,164 @@
     </header>
 
     <main>
-      <div class="tituloContenedor">
-          <img class="welcomeImg" src="./assets/img/iniciowelcome.jpg" alt="inicio welcome">
-          <div class="tituloContenedor">
-            <h1 class="titulo" >Julián Álvarez</span></h1>
-            <h2 class="subtitulo">Web Oficial</h2>
+        <div class="container-fluid text-center my-5">
+            <div class="row">
+                <div class="col-12">
+                    <img class="welcomeImg" src="./assets/img/iniciowelcome.jpg" alt="inicio welcome">
+                    <div class="tituloContenedor">
+                        <h1 class="titulo" >Julián Álvarez</span></h1>
+                        <h2 class="subtitulo">Web Oficial</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                        <video class="videoWelcome" src="./assets/video/julianalvarezwelcome.mp4" autoplay muted loop></video>
+                        <section class="sectionSorteo"> 
+                            <img class="imgSorteo" src="./assets/img/juliancopasorteo.jpg" alt="julian levanta la copa del mundo">
+                            <div class="divTextoSorteo">
+                                <h2 class="tituloSorteo"><span class="tituloSorteoSpan1">¡GANATE LA CAMISETA </span><span class="tituloSorteoSpan2">AUTOGRAFIADA DE JULIÁN!</span></h2>
+                                <p class="pSorteo">Si vivís en Argentina, completá tus datos, contanos tu gol favorito del Araña, ¡y estarás participando por una camiseta autografiada de la selección!</p>
+                            </div>
+                                <form class="formSorteo">
+                                    <div class="formSorteoDiv">
+                                        <div>
+                                            <input class="inputFormSorteo " type="text" placeholder="Nombre/s" required>
+                                        </div>
+                                        <div>
+                                            <input class="inputFormSorteo " type="text" placeholder="Apellido/s" required>
+                                        </div>
+                                        <div>
+                                            <input class="inputFormSorteo " type="email" placeholder="email" required>
+                                        </div>
+                                        <div>
+                                            <input class="inputFormSorteo " type="text" placeholder="Localidad" required>
+                                        </div>
+                                        <div>
+                                            <select class="inputFormSorteo " name="provincia" required>
+                                                <!--busqué en google como hacer el placeholder invalido para el submit pero al parecer solo se puede con java-->
+                                                <option value="placeholder" selected disabled>Provincia</option>
+                                                <option value="Buenos Aires">Buenos Aires</option>
+                                                <option value="CABA">CABA</option>
+                                                <option value="Catamarca">Catamarca</option>
+                                                <option value="Chaco">Chaco</option>
+                                                <option value="Chubut">Chubut</option>
+                                                <option value="Córdoba">Córdoba</option>
+                                                <option value="Corrientes">Corrientes</option>
+                                                <option value="Entre Ríos">Entre Ríos</option>
+                                                <option value="Formosa">Formosa</option>
+                                                <option value="Jujuy">Jujuy</option>
+                                                <option value="La Pampa">La Pampa</option>
+                                                <option value="La Rioja">La Rioja</option>
+                                                <option value="Mendoza">Mendoza</option>
+                                                <option value="Misiones">Misiones</option>
+                                                <option value="Neuquén">Neuquén</option>
+                                                <option value="Río Negro">Río Negro</option>
+                                                <option value="Salta">Salta</option>
+                                                <option value="San Juan">San Juan</option>
+                                                <option value="San Luis">San Luis</option>
+                                                <option value="Santa Cruz">Santa Cruz</option>
+                                                <option value="Santa Fe">Santa Fe</option>
+                                                <option value="Santiago del Estero">Santiago del Estero</option>
+                                                <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">Tierra del Fuego</option>
+                                                <option value="Tucumán">Tucumán</option>
+                                            </select>
+                                        </div>
+                                        <div class="labelSorteo">
+                                            <label>Fecha de nacimiento</label>
+                                            <input class="inputFormSorteo " type="date" required>
+                                        </div>
+                                        <div class="textAreaDivSorteo">
+                                            <textarea class="inputFormSorteo textAreaFormSorteo " name="contanos" id="" placeholder="¡Contanos qué gol te gustó más!" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="formCheckboxDivContenedor">
+                                        <div class="formCheckboxDiv">
+                                            <!--un checkbox requerido y el newsletter opcional-->
+                                            <label class=""><input class="formCheckboxInput" type="checkbox" name="acepta" value="1" required>He leído y acepto los <a href="">Términos y Condiciones de uso</a>.</label>
+                                        </div>
+                                        <div class="formCheckboxDiv">
+                                            <label class=""><input class="formCheckboxInput" type="checkbox" name="email newsletter" value="1">Acepto recibir ofertas y promociones relacionadas con Julián Álvarez y sus patrocinadores en mi casilla de correo electrónico.</label>
+                                        </div>
+                                    </div>
+                                        <div class="formButtonsDiv formButtonsDivSorteo">
+                                            <input class="formButton formButtonReset" type="reset"    value="Limpiar formulario">
+                                            <input class="formButton formButtonSubmit" type="submit" value="Enviar">
+                                        </div>
+                                </form>
+                        </section>
+                        
+                        <!--
+                        <div class="contenedorDivProximo d-flex bg-primary justify-content-center mx-auto">
+                            <div class="divTextoProximoEncuentro d-flex flex-column">
+                                <h3 class="h3ProximoEncuentro">PRÓXIMO ENCUENTRO</h3>
+                                <p class="detallesProximoEncuentro">22/01/2023 - Etihad Stadium</p>
+                            </div>
+                            <div class="divLogosVs d-flex bg-secondary ">
+                                <img class="logoProximoEncuentroLocal logoEquipos" src="./assets/img/manchester-city-fc-logo-escudo-badge.png" alt="manchester city logo">
+                                <p class="vs">vs</p>
+                                <img class="logoProximoEncuentroVisitante logoEquipos" src="./assets/img/wolverhampton-logo-escudo.png" alt="wolverhampton logo">
+                            </div>
+                        </div>
+                            <a class="aEntradaProximoEncuentro" href="https://www.mancity.com/tickets/mens" target="_blank">¡COMPRÁ TU ENTRADA!</a>
+                    -->
+                </div>
+                <div class="col-12 order-3">
+                    <section class="sectionCamiseta">
+                        <div class="contenedorDivCamiseta">
+                            <h3 class="h3Camiseta">¡OBTENÉ TU CAMISETA!</h3>
+                            <a class="aCamiseta" href="https://shop.mancity.com/es/comprar-por-jugador/masculino/atacante/julian-alvarez/?cgid=shopbyplayer-mensteam-forwards-julianalvarez&pmin=0%2c00&start=0&sz=36" target="_blank">TIENDA ONLINE</a>
+                        </div>
+                        <div class="divCamisetas">
+                            <div class="divCamisetasPng">
+                                <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-ni%C3%B1o-1%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221511-JALVAREZ-teamlightblue-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta1.png" alt="camiseta titular manchester city"></a>
+                                <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-2%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221522-JALVAREZ-black-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta2.png" alt="camiseta suplente manchester city"></a>
+                                <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-3%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221530-JALVAREZ-fizzylight%2Fparisiannight-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta3.png" alt="camiseta alternativa manchester city"></a>
+                            </div>
+                            <div class="divPCamisetas">
+                                <p class="p1Camisetas">Haz <a class="aClickTienda" href="https://shop.mancity.com/es/comprar-por-jugador/masculino/atacante/julian-alvarez/?cgid=shopbyplayer-mensteam-forwards-julianalvarez&pmin=0%2c00&start=0&sz=36" target="_blank">click aquí</a> para ingresar a nuestra tienda online, donde podrás elegir entre una gran variedad de productos.</p>
+                                <p class="p2Camisetas">O bien visita nuestra tienda física en el Etihad Stadium, serás recibido/a de maravilla por nuestro personal.</p>
+                            </div>
+                            <iframe class="iframeMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3992.8903901269628!2d-2.2034193382275054!3d53.48299151039588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x549a8dcce67a876a!2sEstadio%20Ciudad%20de%20M%C3%A1nchester!5e0!3m2!1ses-419!2sar!4v1674407305666!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="col-lg-4 col-sm-12 order-2">
+                    <aside class="asideNoticias d-flex flex-column">
+                        <div class="divContenedorBarraImgNoticias">
+                            <img class="imgNoticias" src="./assets/img/messi-julian-alvarez.jpg" alt="messi y julian alvarez">
+                            <div class="divBarraNoticias">
+                                <h2 class="h2Noticias">NOTICIAS</h2>
+                            </div>
+                        </div>
+                        <div class="divNoticiasCard w-75 d-flex flex-column mx-auto">
+                                <div class="noticiasCard">
+                                    <div class="divNoticiasCardTexto">
+                                        <h1 class="tituloNoticiasCard">ÁLVAREZ LIDERA LA REMONTADA</h1>
+                                        <p class="pNoticiasCard">Julián salio de titular a la cancha, y en el primer tiempo se encontró con dos errores claves de Ederson que costaron dos goles. Fue Álvarez quien halló el rebote para el primer gol que daría inicio a una remontada <a class="aLeerMasNoticiaCard" href="">[...]</a></p>
+                                    </div>
+                                    <img class="imgNoticiasCard" src="./assets/img/alvarezarticle1.jpg" alt="gol julian alvarez tottenham">
+                                </div>
+                                <div class="noticiasCard">
+                                    <div class="divNoticiasCardTexto">
+                                        <h1 class="tituloNoticiasCard">GRAN GESTO DE JULIÁN CON HINCHA DE RIVER</h1>
+                                        <p class="pNoticiasCard">Al finalizar el encuentro ante Tottenham, Álvarez se acercó a un hincha de River que fue a verlo especialmente a él con un camperón del Millonario. El delantero reconoció el cariño de este fanático y le regaló el short con el que había disputado el duelo <a class="aLeerMasNoticiaCard" href="">[...]</a></p>
+                                    </div>
+                                    <img class="imgNoticiasCard" src="./assets/img/alvarezarticle2.jpg" alt="julian regala su pantalon">
+                                </div>
+                                <div class="noticiasCard">
+                                    <div class="divNoticiasCardTexto">
+                                        <h1 class="tituloNoticiasCard">LOS NÚMEROS DE JULIÁN EN EL CITY</h1>
+                                        <p class="pNoticiasCard">La Juliánmania dice presente en Manchester. El delantero de la Selección tiene números más que interesantes en poco más de seis meses de estadía en Inglaterra y deja en claro que tiene mucho para aportarle a Pep y compañía. <a class="aLeerMasNoticiaCard" href="">[...]</a></p>
+                                    </div>
+                                    <img class="imgNoticiasCard" src="./assets/img/alvarezarticle3.jpg" alt="estadisticas julian alvarez">
+                                </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="videoBarraProxEncuentro">
-          <video class="videoWelcome" src="./assets/video/julianalvarezwelcome.mp4" autoplay muted loop></video>
-          <div class="contenedorDivProximo">
-              <h3 class="h3ProximoEncuentro">PRÓXIMO ENCUENTRO</h3>
-              <div class="logosVs">
-                  <img class="logoProximoEncuentroLocal logoEquipos" src="./assets/img/manchester-city-fc-logo-escudo-badge.png" alt="manchester city logo">
-                  <p class="vs">vs</p>
-                  <img class="logoProximoEncuentroVisitante logoEquipos" src="./assets/img/wolverhampton-logo-escudo.png" alt="wolverhampton logo">
-              </div>
-              <a class="aEntradaProximoEncuentro" href="https://www.mancity.com/tickets/mens" target="_blank">¡COMPRÁ TU ENTRADA!</a>
-              <p class="detallesProximoEncuentro">22/01/2023 - Etihad Stadium</p>
-          </div>
-      </div>
-      <section class="sectionSorteo"> 
-          <img class="imgSorteo" src="./assets/img/juliancopasorteo.jpg" alt="julian levanta la copa del mundo">
-          <div class="divTextoSorteo">
-              <h2 class="tituloSorteo"><span class="tituloSorteoSpan1">¡GANATE LA CAMISETA </span><span class="tituloSorteoSpan2">AUTOGRAFIADA DE JULIÁN!</span></h2>
-              <p class="pSorteo">Si vivís en Argentina, completá tus datos, contanos tu gol favorito del Araña, ¡y estarás participando por una camiseta autografiada de la selección!</p>
-              <form class="formSorteo">
-                  <input class="inputFormSorteo" type="text" placeholder="Nombre/s" required>
-                  <input class="inputFormSorteo" type="text" placeholder="Apellido/s" required>
-                  <label>Fecha de nacimiento</label>
-                  <input class="inputFormSorteo" type="date" required>
-                  <input class="inputFormSorteo" type="email" placeholder="email" required>
-                  <input class="inputFormSorteo" type="text" placeholder="Localidad" required>
-                  <select class="inputFormSorteo" name="provincia" required>
-                      <!--busqué en google como hacer el placeholder invalido para el submit pero al parecer solo se puede con java-->
-                      <option value="placeholder" selected disabled>Provincia</option>
-                      <option value="Buenos Aires">Buenos Aires</option>
-                      <option value="CABA">CABA</option>
-                      <option value="Catamarca">Catamarca</option>
-                      <option value="Chaco">Chaco</option>
-                      <option value="Chubut">Chubut</option>
-                      <option value="Córdoba">Córdoba</option>
-                      <option value="Corrientes">Corrientes</option>
-                      <option value="Entre Ríos">Entre Ríos</option>
-                      <option value="Formosa">Formosa</option>
-                      <option value="Jujuy">Jujuy</option>
-                      <option value="La Pampa">La Pampa</option>
-                      <option value="La Rioja">La Rioja</option>
-                      <option value="Mendoza">Mendoza</option>
-                      <option value="Misiones">Misiones</option>
-                      <option value="Neuquén">Neuquén</option>
-                      <option value="Río Negro">Río Negro</option>
-                      <option value="Salta">Salta</option>
-                      <option value="San Juan">San Juan</option>
-                      <option value="San Luis">San Luis</option>
-                      <option value="Santa Cruz">Santa Cruz</option>
-                      <option value="Santa Fe">Santa Fe</option>
-                      <option value="Santiago del Estero">Santiago del Estero</option>
-                      <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">Tierra del Fuego</option>
-                      <option value="Tucumán">Tucumán</option>
-                  </select>
-                      <textarea class="inputFormSorteo textAreaForm" name="contanos" id="" cols="30" rows="10" placeholder="¡Contanos qué gol te gustó más!" required></textarea>
-                      <div class="divCheckbox1">
-                          <!--un checkbox requerido y el newsletter opcional-->
-                          <p class="pCheckbox1"><input class="checkbox" type="checkbox" name="acepta" value="1" required>He leído y acepto los <a href="">Términos y Condiciones de uso</a>.</p>
-                      </div>
-                      <div class="divCheckbox2">
-                          <p class="pCheckbox2"><input class="checkbox" type="checkbox" name="email newsletter" value="1">Acepto recibir ofertas y promociones relacionadas con Julián Álvarez y sus patrocinadores en mi casilla de correo electrónico.</p>
-                      </div>
-                      <input class="buttonForm resetForm" type="reset"    value="Limpiar formulario">
-                      <input class="buttonForm submitForm" type="submit" value="Enviar">
-              </form>
-          </div>
-      </section>
-      <section class="sectionCamiseta">
-          <div class="contenedorDivCamiseta">
-              <h3 class="h3Camiseta">¡OBTENÉ TU CAMISETA!</h3>
-              <a class="aCamiseta" href="https://shop.mancity.com/es/comprar-por-jugador/masculino/atacante/julian-alvarez/?cgid=shopbyplayer-mensteam-forwards-julianalvarez&pmin=0%2c00&start=0&sz=36" target="_blank">TIENDA ONLINE</a>
-          </div>
-          <div class="divCamisetasPng">
-              <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-ni%C3%B1o-1%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221511-JALVAREZ-teamlightblue-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta1.png" alt="camiseta titular manchester city"></a>
-              <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-2%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221522-JALVAREZ-black-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta2.png" alt="camiseta suplente manchester city"></a>
-              <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-3%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221530-JALVAREZ-fizzylight%2Fparisiannight-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta3.png" alt="camiseta alternativa manchester city"></a>
-          </div>
-          <div class="divPCamisetas">
-              <p class="p1Camisetas">Haz <a class="aClickTienda" href="https://shop.mancity.com/es/comprar-por-jugador/masculino/atacante/julian-alvarez/?cgid=shopbyplayer-mensteam-forwards-julianalvarez&pmin=0%2c00&start=0&sz=36" target="_blank">click aquí</a> para ingresar a nuestra tienda online, donde podrás elegir entre una gran variedad de productos.</p>
-              <p class="p2Camisetas">O bien visita nuestra tienda física en el Etihad Stadium, serás recibido/a de maravilla por nuestro personal.</p>
-          </div>
-          <iframe class="iframeMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3992.8903901269628!2d-2.2034193382275054!3d53.48299151039588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x549a8dcce67a876a!2sEstadio%20Ciudad%20de%20M%C3%A1nchester!5e0!3m2!1ses-419!2sar!4v1674407305666!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-      <aside class="asideNoticias">
-          <!--este aside en un futuro lo voy a ubicar a la derecha de la página   -->
-          <div class="divContenedorBarraImgNoticias">
-              <img class="imgNoticias" src="./assets/img/messi-julian-alvarez.jpg" alt="messi y julian alvarez">
-              <div class="divBarraNoticias">
-                  <h2 class="h2Noticias">NOTICIAS</h2>
-              </div>
-          </div>
-          <div class="divNoticiasCard">
-              <article class="noticiasCard1">
-                  <div class="divNoticiasCardTexto">
-                      <h1 class="tituloNoticiasCard">ÁLVAREZ LIDERA LA REMONTADA</h1>
-                      <p class="pNoticiasCard">Julián salio de titular a la cancha, y en el primer tiempo se encontró con dos errores claves de Ederson que costaron dos goles. Fue Álvarez quien halló el rebote para el primer gol que daría inicio a una remontada <a class="aLeerMasNoticiaCard" href="">[...]</a></p>
-                  </div>
-                  <img class="imgNoticiasCard" src="./assets/img/alvarezarticle1.jpg" alt="gol julian alvarez tottenham">
-                  </article>
-              <article class="noticiasCard2">
-                  <div class="divNoticiasCardTexto">
-                      <h1 class="tituloNoticiasCard">GRAN GESTO DE JULIÁN CON HINCHA DE RIVER</h1>
-                      <p class="pNoticiasCard">Al finalizar el encuentro ante Tottenham, Álvarez se acercó a un hincha de River que fue a verlo especialmente a él con un camperón del Millonario. El delantero reconoció el cariño de este fanático y le regaló el short con el que había disputado el duelo <a class="aLeerMasNoticiaCard" href="">[...]</a></p>
-                  </div>
-                  <img class="imgNoticiasCard" src="./assets/img/alvarezarticle2.jpg" alt="julian regala su pantalon">
-              </article>
-              <article class="noticiasCard3">
-                  <div class="divNoticiasCardTexto">
-                      <h1 class="tituloNoticiasCard">LOS NÚMEROS DE JULIÁN EN EL CITY</h1>
-                      <p class="pNoticiasCard">La Juliánmania dice presente en Manchester. El delantero de la Selección tiene números más que interesantes en poco más de seis meses de estadía en Inglaterra y deja en claro que tiene mucho para aportarle a Pep y compañía. <a class="aLeerMasNoticiaCard" href="">[...]</a></p>
-                  </div>
-                  <img class="imgNoticiasCard" src="./assets/img/alvarezarticle3.jpg" alt="estadisticas julian alvarez">
-              </article>
-          </div>
-      </aside>
   </main>
 
   <footer class="footer">
