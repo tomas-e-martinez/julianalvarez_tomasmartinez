@@ -2,6 +2,11 @@
     background-color: white;
     box-shadow: 0 2px 2px rgb(44,44,44);
     margin-bottom: 5vh;
+    animation-name: desdeIzq;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 0;
     .contactoDivP{
         font-size: 1.2em;
         font-style: italic;
@@ -34,6 +39,15 @@
         }
         .formCheckboxDiv{
             flex-basis: 90% !important;
+            .aTycContacto{
+                color: map-get($estilos-links, color);
+                text-decoration: none;
+                transition: map-get($estilos-links, transition);
+                font-weight: 500;
+                &:hover{
+                    color: map-get($estilos-links, color-hover);
+                }
+            }
             .formCheckboxInput{
                 margin-right: 5px;
             }
@@ -60,7 +74,7 @@
             }
             .formButtonSubmit{
                 @extend .formButtonReset;
-                background-color: rgb(28, 44, 91);
+                background-color: $color-primario;
                 color: white;
                 &:hover{
                     background-color: rgb(255, 198, 89);

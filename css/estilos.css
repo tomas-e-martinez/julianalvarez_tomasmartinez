@@ -1,6 +1,21 @@
 @charset "UTF-8";
-/*colores*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@keyframes desdeIzq {
+  0% {
+    transform: translateX(-300px);
+    filter: opacity(0); }
+  100% {
+    transform: translateX(0);
+    filter: opacity(1); } }
+
+@keyframes desdeArriba {
+  0% {
+    transform: translateY(-200px);
+    filter: opacity(0); }
+  100% {
+    transform: translateX(0);
+    filter: opacity(1); } }
+
 * {
   font-family: 'Quicksand', sans-serif;
   box-sizing: border-box; }
@@ -49,6 +64,13 @@
   .navbar .nav__div .navbar-collapse .nav-item .li__a__ico {
     margin-right: 6px; }
 
+.navbar-index {
+  animation-name: desdeArriba;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 0; }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -90,7 +112,12 @@ main {
   object-fit: cover;
   background-color: white;
   padding: 5px;
-  box-shadow: 0 2px 5px #3a3a3a; }
+  box-shadow: 0 2px 5px #3a3a3a;
+  animation-name: desdeIzq;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 0; }
 
 .tituloContenedor {
   margin-top: 30px;
@@ -98,7 +125,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px; }
+  padding: 10px;
+  animation-name: desdeIzq;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 2.2s;
+  /*0.2s mas de duración para que no parezca un solo bloque y darle mejor efecto*/
+  animation-delay: 0; }
   .tituloContenedor .titulo {
     background-color: white;
     box-shadow: 0 2px 2px #474747;
@@ -220,7 +253,12 @@ main {
 .containerContacto {
   background-color: white;
   box-shadow: 0 2px 2px #2c2c2c;
-  margin-bottom: 5vh; }
+  margin-bottom: 5vh;
+  animation-name: desdeIzq;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 0; }
   .containerContacto .contactoDivP {
     font-size: 1.2em;
     font-style: italic; }
@@ -250,6 +288,13 @@ main {
           border-radius: 5px; }
     .containerContacto .formContacto .formCheckboxDiv {
       flex-basis: 90% !important; }
+      .containerContacto .formContacto .formCheckboxDiv .aTycContacto {
+        color: #6cabdd;
+        text-decoration: none;
+        transition: 200ms ease;
+        font-weight: 500; }
+        .containerContacto .formContacto .formCheckboxDiv .aTycContacto:hover {
+          color: #ffc659; }
       .containerContacto .formContacto .formCheckboxDiv .formCheckboxInput {
         margin-right: 5px; }
     .containerContacto .formContacto .formButtonsDiv {

@@ -10,7 +10,14 @@ main{
     background-color: white;
     padding: 5px;
     box-shadow: 0 2px 5px rgb(58, 58, 58);
+    animation-name: desdeIzq;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 0;
 }
+
+
 
 .tituloContenedor{
     margin-top: 30px;
@@ -18,6 +25,12 @@ main{
     @include flex-direction(column);
     align-items: center;
     padding: 10px;
+    animation-name: desdeIzq;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2.2s;
+    /*0.2s mas de duración para que no parezca un solo bloque y darle mejor efecto*/
+    animation-delay: 0;
     .titulo{
         background-color: white;
         box-shadow: 0 2px 2px rgb(71, 71, 71);
@@ -25,7 +38,7 @@ main{
         z-index: 998;
     }
     .subtitulo{
-        background-color: rgb(28, 44, 91);
+        background-color: $color-primario;
         box-shadow: 0 2px 2px rgb(71, 71, 71);
         color: white;
         margin-top: -10px;

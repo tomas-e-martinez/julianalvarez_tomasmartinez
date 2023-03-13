@@ -1,5 +1,6 @@
-/*colores*/
-$gradiente-footer-nav: linear-gradient(to right, rgb(25, 39, 82), rgb(28, 44, 91));
+//colores
+$color-primario: rgb(28, 44, 91);
+$gradiente-footer-nav: linear-gradient(to right, rgb(25, 39, 82), $color-primario);
 
 
 $estilos-links:(

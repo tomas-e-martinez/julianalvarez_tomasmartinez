@@ -97,7 +97,7 @@
             }
             .formButtonSubmit{
                 @extend .formButtonReset;
-                background-color: rgb(28, 44, 91);
+                background-color: $color-primario;
                 color: white;
                 &:hover{
                     background-color: rgb(255, 198, 89);
@@ -182,7 +182,7 @@
             padding: 8px 5vw 8px 5vw;
         }
         .aCamiseta{
-            background-color: rgb(28, 44, 91);
+            background-color: $color-primario;
             box-shadow: 0 2px 2px rgb(71, 71, 71);
             color: white;
             margin-top: -10px;
