@@ -226,7 +226,7 @@ main {
 .tableEstadisticas {
   font-weight: 500;
   box-shadow: 0px 1px 3px #333333; }
-  .tableEstadisticas .tr .tablaBold {
+  .tableEstadisticas .tablaBold {
     font-weight: 800; }
 
 /*media queries ajustando la fuente de las tablas para que conserven el formato lo maximo posible manteniendo la legibilidad*/
