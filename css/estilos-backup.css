@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    font-family: 'Quicksand', sans-serif;; 
+    box-sizing: border-box;
+}
+
+.body{
+    min-height: 100%;
+    background: linear-gradient(rgb(240, 240, 240), rgb(136, 195, 243));
+}
+
+.nav__div__a--logo{
+    font-weight: 200;
+    font-size: 1.5em;
+    transition: 200ms ease;
+    margin-left: 5px;
+    color: rgb(253, 253, 253) !important;
+}
+.nav__div__a--logo span{
+    font-weight: 600;
+    margin-left: -5px;
+    color: rgb(108, 171, 221);
+}
+
+/*acá no podía hacerle un hover cambiando el color a la imagen, así que una solución que me terminó gustando más fue usar el brillo*/
+.navbar-brand{
+    filter: brightness(92%);
+    transition: 200ms ease;
+}
+.navbar-brand:hover{
+    filter: brightness(100%);
+}
+
+.navbar,
+.footer{
+    background: linear-gradient(to right, rgb(25, 39, 82), rgb(28, 44, 91));
+}
+
+
+
+.nav-link{
+    transition: 200ms ease;
+}
+
+.nav-link:hover{
+    color: rgb(255, 198, 89) !important;
+}
+
+
+nav div ul a{
+    margin-right: 15px;
+}
+
+.nav__div__img{
+    height: 2.2rem;
+    transform: translateY(-3px);
+    margin-right: 10px;
+}
+
+.li__a__ico{
+    margin-right: 6px;
+}
+
+/* le saqué el borde y box-shadow que se mostraba al clickear el botón de menú */
+.navbar-toggler{
+    border: none;
+    transition: 200ms ease;
+}
+.navbar-toggler:hover{
+    color:rgb(255, 198, 89);
+}
+.navbar-toggler i{
+    transform: scale(1.5);
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+main{
+    min-height: 90vh;
+    margin-top: 12vh;
+}
+
+.welcomeImg{
+    width: 90%;
+    height: 50vh;
+    object-fit: cover;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgb(58, 58, 58);
+}
+
+.tituloContenedor{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.titulo{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    padding: 8px 5vw 8px 5vw;
+    z-index: 998;
+}
+
+.subtitulo{
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    color: white;
+    margin-top: -10px;
+    padding: 2px 30px 2px 30px;
+}
+
+.containerContacto{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(44,44,44);
+    margin-bottom: 5vh;
+}
+
+.imgBio{
+    padding: 5px;
+    background-color: white;
+    width: 75%;
+    height: 45vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgb(44, 44, 44);
+}
+
+@media only screen and (max-width: 767px) {
+    .imgBio {
+        width: 100%;
+    }
+    
+}
+
+.imgBioCol12{
+    height: 75vh;
+}
+
+@media only screen and (max-width: 767px) {
+    .imgBioCol12 {
+        height: 45vh;
+    }
+    
+}
+
+
+
+.pBio{
+    padding: 10px 0 20px;
+    width: 75%;
+    margin: 10px auto ;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .pBio {
+        font-size: 1.1em;
+    }
+}
+
+.divH2Bio{
+}
+
+.h2Bio{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    padding: 8px 5vw 8px 5vw;
+    width: 60%;
+    margin: 0 auto 5vh;
+    font-size: 2rem;
+}
+
+.h3Bio{
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    margin: auto;
+    width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+    .h3Bio {
+        width: 100%;
+    }
+}
+
+
+.imgEstadisticas{
+    width: 80%;
+    height: 45vh;
+    object-fit: cover;
+    box-shadow: 0px 1px 5px rgb(51, 51, 51);
+}
+
+.estadisticasTituloLogo{
+    height: 13vh;
+}
+
+.h3DivEquipoEstadisticas{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    width: 45vw;
+    height: 10vh;
+    margin: 0 auto 5vh;
+}
+
+.h3EquipoEstadisticas{
+    color: white;
+    flex-basis: 40%;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .h3DivEquipoEstadisticas {
+        width: 100%;
+    }
+    
+}
+
+
+.tableEstadisticas{
+    font-weight: 500;
+    box-shadow: 0px 1px 3px rgb(51, 51, 51);
+}
+
+.tablaBold{
+    font-weight: 800;
+}
+
+/*media queries ajustando la fuente de las tablas para que conserven el formato lo maximo posible manteniendo la legibilidad*/
+
+@media only screen and (max-width: 870px) {
+    .table {
+        font-size: 0.95em;
+    }
+    
+}
+
+@media only screen and (max-width: 815px) {
+    .table {
+        margin-top: 15px;
+        font-size: 0.9em;
+    }
+    
+}
+
+@media only screen and (max-width: 780px) {
+    .table {
+        margin-top: 15px;
+        font-size: 0.8em;
+    }
+    
+}
+
+
+@media only screen and (max-width: 580px) {
+    .table {
+        margin-top: 15px;
+        font-size: 0.75em;
+        width: 80% !important;
+    }
+    
+}
+
+
+
+
+
+.bioContainer{
+    height: 100%;
+}
+
+
+
+
+
+
+.sectionSorteo{
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    width: 85%;
+    margin: 5vh auto;
+    padding: 5vh 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.formSorteo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imgSorteo{
+    width: 75%;
+    height: 50vh;
+    object-fit: cover;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    margin-bottom: 5vh;
+    align-self: center;
+}
+
+@media only screen and (max-width: 815px) {
+    .imgSorteo {
+        width: 100%;
+    }
+    
+}
+
+.formSorteoDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formSorteoDiv div{
+    flex-basis: 35%;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.labelSorteo{
+    flex-basis: 100% !important;
+}
+
+.inputFormSorteo{
+    border: none;
+    background-color: rgb(247, 247, 247);
+    box-shadow: inset 0 1px 2px grey;
+    padding-left: 5px;
+    resize: none;
+}
+
+.inputFormSorteo:focus{
+    outline: solid 2px rgb(108, 171, 221);
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.textAreaFormSorteo{
+    width: 40vw;
+    height: 20vh;
+}
+
+@media only screen and (max-width: 815px) {
+    .textAreaFormSorteo {
+        width: 60vw;
+    }
+    
+}
+
+.formCheckboxDivContenedor{
+    margin-top: 3vh;
+}
+
+.formCheckboxDiv{
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.formContacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formContacto div{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.contactoDivP{
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.textAreaDiv{
+    flex-basis: 70% !important;
+    margin-bottom: 10px;
+}
+
+.inputTextForm{
+    border: none;
+    background-color: rgb(247, 247, 247);
+    box-shadow: inset 0 1px 2px grey;
+    padding-left: 5px;
+    resize: none;
+}
+
+.inputTextForm:focus{
+    outline: solid 2px rgb(108, 171, 221);
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.formCheckboxDiv{
+    flex-basis: 90% !important;
+}
+
+.formCheckboxInput{
+    margin-right: 5px;
+}
+
+.formButtonsDiv{
+    flex-direction: row !important;
+    justify-content: center;
+    margin-top: 30px !important;
+}
+
+.formButton{
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+}
+
+.formButtonReset{
+    background-color: rgb(108, 171, 221);
+    border: none;
+    box-shadow: 0 3px 3px grey;
+    font-size: 1.2em;
+    margin: 0 10px 0 10px;
+    transition: 100ms ease;
+}
+
+.formButtonReset:hover{
+    background-color: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
+}
+
+.formButtonSubmit{
+    background-color: rgb(28, 44, 91);
+    color: white;
+    border: none;
+    box-shadow: 0 3px 3px grey;
+    font-size: 1.2em;
+    margin: 0 10px 0 10px;
+    transition: 100ms ease; 
+}
+
+.formButtonSubmit:hover{
+    background-color: rgb(255, 198, 89);
+    color: black;
+}
+
+
+
+
+.mediosCard{
+    height: 95%;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 0;
+    box-shadow: 0 1px 2px grey;
+    padding: 10px;
+    
+}
+
+.mediosCardPMedio{
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.mediosCardImg{
+    height: 60%;
+    object-fit: cover;
+}
+
+.aMediosCard{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 1px 2px rgb(88, 88, 88);
+    border-radius: 5px;
+    font-size: 1.3em;
+    padding: 5px 15px 5px 15px;
+    font-weight: 200;
+    transition: 150ms ease;
+}
+
+.aMediosCard:hover{
+    color: black;
+    background-color:rgb(255, 198, 89) ;
+}
+
+/*
+.contenedorDivProximo{
+    width: 50%;
+    height: 10vh;
+}
+
+.divTextoProximoEncuentro{
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.divTextoProximoEncuentro h3{
+    background-color: aqua;
+}
+
+.divTextoProximoEncuentro p{
+    background-color: antiquewhite;
+}
+
+.divLogosVs{
+    flex-basis: 50%;
+    justify-content: space-evenly;
+}
+
+.vs{
+    font-size: 2em;
+    align-self: center;
+    font-weight: 500;
+}
+
+.logoEquipos{
+    height: 10.5vh;
+    align-self: center;
+    object-fit: contain;
+}*/
+
+.videoWelcome{
+    width: 85%;
+    height: 65vh;
+    object-fit: cover;
+    box-shadow: 0 2px 5px grey;
+    background-color: white;
+    padding: 5px;
+}
+
+.asideNoticias{
+}
+
+.imgNoticias{
+    width: 85%;
+    height: 65vh;
+    object-fit: cover;
+    box-shadow: 0 2px 5px grey;
+    z-index: -1;
+    padding: 5px;
+    background-color: white;
+}
+
+.h2Noticias{
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: -20px;
+    font-weight: 600;
+}
+
+.imgNoticiasCard{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.divNoticiasCard{
+}
+
+.noticiasCard{
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    margin-top: 50px;
+}
+
+.divNoticiasCardTexto{
+    padding: 20px;
+}
+
+.tituloNoticiasCard{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+.contenedorDivCamiseta{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.contenedorDivCamiseta h3{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    padding: 8px 5vw 8px 5vw;
+}
+
+.contenedorDivCamiseta a{
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    color: white;
+    margin-top: -10px;
+    padding: 2px 30px 2px 30px;
+}
+
+
+.divCamisetas{
+    background: white;
+    box-shadow: 0 2px 5px grey;
+    padding: 5vh 0 0 0;
+    margin: auto;
+    width: 90%;
+}
+
+@media only screen and (max-width: 815px) {
+    .divCamisetas {
+        width: 100%;
+    }
+    
+}
+
+
+.divCamisetasPng{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto 5vh;
+}
+
+.aCamisetasPng{
+}
+
+.camisetasPng{
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:0 2px 5px grey;
+}
+
+.divPCamisetas{
+    width: 90%;
+    margin: auto;
+}
+
+.divPCamisetas p{
+    font-size: 1.1rem;
+}
+
+.divPCamisetas p a{
+    color: rgb(108, 171, 221);
+    text-decoration: none;
+    transition: 200ms ease;
+    font-weight: 500;
+}
+
+.divPCamisetas p a:hover{
+    color: rgb(255, 198, 89);
+}
+
+.iframeMapa{
+    margin: 5vh 0;
+    width: 60%;
+    box-shadow: 0 2px 5px grey;
+}
+
+@media only screen and (max-width: 815px) {
+    .iframeMapa {
+        width: 90%;
+    }
+    
+}
+
+
+
+footer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer__div1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__div2{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__p4{
+    margin-bottom: -15px;
+}
+
+.aFooter{
+    color: rgb(108, 171, 221);
+    text-decoration: none;
+    transition: 200ms ease;
+}
+
+.aFooter:hover{
+    color: rgb(255, 198, 89);
+}
+
+.aRedes{
+    color: white;
+    transition: 200ms ease;
+    font-size: 2.7em;
+    padding: 20px;
+}
+
+
+
+.aRedes:hover{
+    color: rgb(255, 198, 89);
+}

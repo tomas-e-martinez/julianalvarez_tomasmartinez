@@ -1,0 +1,245 @@
+.videoWelcome{
+    width: 85%;
+    height: 65vh;
+    object-fit: cover;
+    box-shadow: 0 2px 5px grey;
+    background-color: white;
+    padding: 5px;
+}
+
+.sectionSorteo{
+    background-color: white;
+    box-shadow: 0 2px 5px grey;
+    width: 85%;
+    margin: 5vh auto;
+    padding: 5vh 2vw;
+    @include flex-direction(column);
+    .imgSorteo{
+        width: 75%;
+        height: 50vh;
+        object-fit: cover;
+        padding: 5px;
+        background-color: white;
+        box-shadow: 0 2px 5px grey;
+        margin-bottom: 5vh;
+        align-self: center;
+    }
+    .formSorteo{
+        @include flex-direction(column);
+        .formSorteoDiv{
+            @include flex-direction(row);
+            flex-wrap: wrap;
+            justify-content: center;
+            .formSorteoDiv__div{
+                flex-basis: 35%;
+                margin-top: 30px;
+                margin-left: 5px;
+                margin-right: 5px;
+                .inputFormSorteo{
+                    border: none;
+                    background-color: rgb(247, 247, 247);
+                    box-shadow: inset 0 1px 2px grey;
+                    padding-left: 5px;
+                    resize: none;
+                    &:focus{
+                        outline: solid 2px rgb(108, 171, 221);
+                        box-shadow: none;
+                        border-radius: 5px;
+                    }
+                }
+                .textAreaFormSorteo{
+                    width: 40vw;
+                    height: 20vh;
+                }
+            }
+            .labelSorteo{
+                flex-basis: 100% !important;
+            }
+        }
+        .formCheckboxDivContenedor{
+            margin-top: 3vh;
+            .formCheckboxDiv{
+                margin-top: 10px;
+                flex-basis: 90% !important;
+                .formCheckboxInput{
+                    margin-right: 5px;
+                }
+                .aTyc{
+                    color: map-get($estilos-links, color);
+                    text-decoration: none;
+                    transition: map-get($estilos-links, transition);
+                    font-weight: 500;
+                    &:hover{
+                        color: map-get($estilos-links, color-hover);
+                    }
+                }
+            }
+        }
+        .formButtonsDiv{
+            @include flex-direction(row);
+            justify-content: center;
+            margin-top: 30px !important;
+            .formButton{
+                padding: 5px 10px 5px 10px;
+                font-weight: 500;
+            }
+            .formButtonReset{
+                background-color: rgb(108, 171, 221);
+                border: none;
+                box-shadow: 0 3px 3px grey;
+                font-size: 1.2em;
+                margin: 0 10px 0 10px;
+                transition: 100ms ease;
+                &:hover{
+                    background-color: rgb(228, 228, 228);
+                    color: rgb(0, 0, 0);
+                }
+            }
+            .formButtonSubmit{
+                @extend .formButtonReset;
+                background-color: rgb(28, 44, 91);
+                color: white;
+                &:hover{
+                    background-color: rgb(255, 198, 89);
+                    color: black;
+                } 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .sectionSorteo{
+        .imgSorteo {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .sectionSorteo{
+        .formSorteo{
+            .formSorteoDiv{
+                .formSorteoDiv__div{
+                    .textAreaFormSorteo {
+                        width: 60vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.asideNoticias{
+    .imgNoticias{
+        width: 85%;
+        height: 65vh;
+        object-fit: cover;
+        box-shadow: 0 2px 5px grey;
+        z-index: -1;
+        padding: 5px;
+        background-color: white;
+    }
+    .h2Noticias{
+        background-color: white;
+        box-shadow: 0 2px 5px grey;
+        width: 60%;
+        margin: auto;
+        position: relative;
+        top: -20px;
+        font-weight: 600;
+    }
+    .divNoticiasCard{
+        .noticiasCard{
+            background-color: white;
+            box-shadow: 0 2px 5px grey;
+            margin-top: 50px;
+            .imgNoticiasCard{
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+            }
+            .divNoticiasCardTexto{
+                padding: 20px;
+                .tituloNoticiasCard{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.sectionCamiseta{
+    .contenedorDivCamiseta{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include flex-direction(column);
+        align-items: center;
+        padding: 10px;
+        .h3Camiseta{
+            background-color: white;
+            box-shadow: 0 2px 2px rgb(71, 71, 71);
+            padding: 8px 5vw 8px 5vw;
+        }
+        .aCamiseta{
+            background-color: rgb(28, 44, 91);
+            box-shadow: 0 2px 2px rgb(71, 71, 71);
+            color: white;
+            margin-top: -10px;
+            padding: 2px 30px 2px 30px;
+        }
+    }
+    .divCamisetas{
+        background: white;
+        box-shadow: 0 2px 5px grey;
+        padding: 5vh 0 0 0;
+        margin: auto;
+        width: 90%;
+        .divCamisetasPng{
+            display: flex;
+            justify-content: space-evenly;
+            width: 90%;
+            margin: 0 auto 5vh;
+            .aCamisetasPng{
+                .camisetasPng{
+                    width: 70%;
+                    background-color: white;
+                    border-radius: 10px;
+                    box-shadow:0 2px 5px grey;
+                }
+            }
+        }
+        .divPCamisetas{
+            width: 90%;
+            margin: auto;
+            .pCamisetas{
+                font-size: 1.1rem;
+                .aClickTienda{
+                    color: map-get($estilos-links, color);
+                    text-decoration: none;
+                    transition: map-get($estilos-links, transition);
+                    font-weight: 500;
+                    &:hover{
+                        color: map-get($estilos-links, color-hover);
+                    }
+                }
+            }
+        }
+        .iframeMapa{
+            margin: 5vh 0;
+            width: 60%;
+            box-shadow: 0 2px 5px grey;
+        }
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .sectionCamiseta{
+        .divCamisetas {
+            width: 100%;
+            .iframeMapa {
+                width: 90%;
+            }
+        }
+    }
+}

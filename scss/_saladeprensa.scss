@@ -1,0 +1,37 @@
+.mediosCard{
+    height: 95%;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 0;
+    box-shadow: 0 1px 2px grey;
+    padding: 10px;
+    .mediosCardImg{
+        height: 60%;
+        object-fit: cover;
+    }
+    .card-body{
+        .mediosCardPMedio{
+            font-style: italic;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+        .aMediosCard{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(28, 44, 91);
+            box-shadow: 0 1px 2px rgb(88, 88, 88);
+            border-radius: 5px;
+            font-size: 1.3em;
+            padding: 5px 15px 5px 15px;
+            font-weight: 200;
+            transition: 150ms ease;
+            &:hover{
+                    color: black;
+                    background-color:rgb(255, 198, 89) ;
+            }
+        }
+        
+        
+    }
+    
+}

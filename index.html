@@ -14,8 +14,8 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid nav__div">
-          <a class="navbar-brand nav__div__a--logo" href="./index.html"><img  class="nav__div__img"src="./assets/img/logo.png" alt="logo">julián <span>álvarez</span></a>          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i>
+          <a class="navbar-brand nav__div__a--logo" href="./index.html"><img  class="nav__div__img"src="./assets/img/logo.png" alt="logo">julián <span class="nav__div__a--logo__span">álvarez</span></a>          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="navbar-toggler__i fa-solid fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -62,19 +62,19 @@
                             </div>
                                 <form class="formSorteo">
                                     <div class="formSorteoDiv">
-                                        <div>
+                                        <div class="formSorteoDiv__div ">
                                             <input class="inputFormSorteo " type="text" placeholder="Nombre/s" required>
                                         </div>
-                                        <div>
+                                        <div class="formSorteoDiv__div ">
                                             <input class="inputFormSorteo " type="text" placeholder="Apellido/s" required>
                                         </div>
-                                        <div>
+                                        <div class="formSorteoDiv__div ">
                                             <input class="inputFormSorteo " type="email" placeholder="email" required>
                                         </div>
-                                        <div>
+                                        <div class="formSorteoDiv__div ">
                                             <input class="inputFormSorteo " type="text" placeholder="Localidad" required>
                                         </div>
-                                        <div>
+                                        <div class="formSorteoDiv__div ">
                                             <select class="inputFormSorteo " name="provincia" required>
                                                 <!--busqué en google como hacer el placeholder invalido para el submit pero al parecer solo se puede con java-->
                                                 <option value="placeholder" selected disabled>Provincia</option>
@@ -104,44 +104,29 @@
                                                 <option value="Tucumán">Tucumán</option>
                                             </select>
                                         </div>
-                                        <div class="labelSorteo">
+                                        <div class="formSorteoDiv__div labelSorteo">
                                             <label>Fecha de nacimiento</label>
                                             <input class="inputFormSorteo " type="date" required>
                                         </div>
-                                        <div class="textAreaDivSorteo">
+                                        <div class="formSorteoDiv__div textAreaDivSorteo">
                                             <textarea class="inputFormSorteo textAreaFormSorteo " name="contanos" id="" placeholder="¡Contanos qué gol te gustó más!" required></textarea>
                                         </div>
                                     </div>
                                     <div class="formCheckboxDivContenedor">
                                         <div class="formCheckboxDiv">
                                             <!--un checkbox requerido y el newsletter opcional-->
-                                            <label class=""><input class="formCheckboxInput" type="checkbox" name="acepta" value="1" required>He leído y acepto los <a href="">Términos y Condiciones de uso</a>.</label>
+                                            <label class=""><input class="formCheckboxInput" type="checkbox" name="acepta" value="1" required>He leído y acepto los <a class="aTyc" href="">Términos y Condiciones de uso</a>.</label>
                                         </div>
                                         <div class="formCheckboxDiv">
                                             <label class=""><input class="formCheckboxInput" type="checkbox" name="email newsletter" value="1">Acepto recibir ofertas y promociones relacionadas con Julián Álvarez y sus patrocinadores en mi casilla de correo electrónico.</label>
                                         </div>
                                     </div>
-                                        <div class="formButtonsDiv formButtonsDivSorteo">
-                                            <input class="formButton formButtonReset" type="reset"    value="Limpiar formulario">
-                                            <input class="formButton formButtonSubmit" type="submit" value="Enviar">
-                                        </div>
+                                    <div class="formButtonsDiv formButtonsDivSorteo">
+                                        <input class="formButton formButtonReset" type="reset"    value="Limpiar formulario">
+                                        <input class="formButton formButtonSubmit" type="submit" value="Enviar">
+                                    </div>
                                 </form>
                         </section>
-                        
-                        <!--
-                        <div class="contenedorDivProximo d-flex bg-primary justify-content-center mx-auto">
-                            <div class="divTextoProximoEncuentro d-flex flex-column">
-                                <h3 class="h3ProximoEncuentro">PRÓXIMO ENCUENTRO</h3>
-                                <p class="detallesProximoEncuentro">22/01/2023 - Etihad Stadium</p>
-                            </div>
-                            <div class="divLogosVs d-flex bg-secondary ">
-                                <img class="logoProximoEncuentroLocal logoEquipos" src="./assets/img/manchester-city-fc-logo-escudo-badge.png" alt="manchester city logo">
-                                <p class="vs">vs</p>
-                                <img class="logoProximoEncuentroVisitante logoEquipos" src="./assets/img/wolverhampton-logo-escudo.png" alt="wolverhampton logo">
-                            </div>
-                        </div>
-                            <a class="aEntradaProximoEncuentro" href="https://www.mancity.com/tickets/mens" target="_blank">¡COMPRÁ TU ENTRADA!</a>
-                    -->
                 </div>
                 <div class="col-12 order-3">
                     <section class="sectionCamiseta">
@@ -156,8 +141,8 @@
                                 <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-3%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221530-JALVAREZ-fizzylight%2Fparisiannight-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta3.png" alt="camiseta alternativa manchester city"></a>
                             </div>
                             <div class="divPCamisetas">
-                                <p class="p1Camisetas">Haz <a class="aClickTienda" href="https://shop.mancity.com/es/comprar-por-jugador/masculino/atacante/julian-alvarez/?cgid=shopbyplayer-mensteam-forwards-julianalvarez&pmin=0%2c00&start=0&sz=36" target="_blank">click aquí</a> para ingresar a nuestra tienda online, donde podrás elegir entre una gran variedad de productos.</p>
-                                <p class="p2Camisetas">O bien visita nuestra tienda física en el Etihad Stadium, serás recibido/a de maravilla por nuestro personal.</p>
+                                <p class="pCamisetas">Haz <a class="aClickTienda" href="https://shop.mancity.com/es/comprar-por-jugador/masculino/atacante/julian-alvarez/?cgid=shopbyplayer-mensteam-forwards-julianalvarez&pmin=0%2c00&start=0&sz=36" target="_blank">click aquí</a> para ingresar a nuestra tienda online, donde podrás elegir entre una gran variedad de productos.</p>
+                                <p class="pCamisetas">O bien visita nuestra tienda física en el Etihad Stadium, serás recibido/a de maravilla por nuestro personal.</p>
                             </div>
                             <iframe class="iframeMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3992.8903901269628!2d-2.2034193382275054!3d53.48299151039588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x549a8dcce67a876a!2sEstadio%20Ciudad%20de%20M%C3%A1nchester!5e0!3m2!1ses-419!2sar!4v1674407305666!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>

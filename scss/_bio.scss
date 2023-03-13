@@ -1,0 +1,72 @@
+.h3Bio{
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(28, 44, 91);
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    margin: auto;
+    width: 40%;
+}
+
+@media only screen and (max-width: 767px) {
+    .h3Bio {
+        width: 100%;
+    }
+}
+
+.row{
+    .imgBio{
+        padding: 5px;
+        background-color: white;
+        width: 75%;
+        height: 45vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        object-fit: cover;
+        box-shadow: 0 2px 5px rgb(44, 44, 44);
+    }
+    .pBio{
+        padding: 10px 0 20px;
+        width: 75%;
+        margin: 10px auto ;
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    .imgBioCol12{
+        height: 75vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .row{
+        .imgBio {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .row{
+        .imgBioCol12 {
+            height: 45vh;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .row{
+        .pBio {
+            font-size: 1.1em;
+        }
+    }
+}
+
+
+.h2Bio{
+    background-color: white;
+    box-shadow: 0 2px 2px rgb(71, 71, 71);
+    padding: 8px 5vw 8px 5vw;
+    width: 60%;
+    margin: 0 auto 5vh;
+    font-size: 2rem;
+}

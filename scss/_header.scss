@@ -1,0 +1,62 @@
+.navbar{
+    background: $gradiente-footer-nav;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    .nav__div{
+        .navbar-brand{
+            /*acá no podía hacerle un hover cambiando el color a la imagen, así que una solución que me terminó gustando más fue usar el brillo*/
+            filter: brightness(92%);
+            transition: 200ms ease;
+            &:hover{
+                filter: brightness(100%)
+            }
+        }
+        .nav__div__img{
+            height: 2.2rem;
+            transform: translateY(-3px);
+            margin-right: 10px;
+        }
+        .nav__div__a--logo{
+            font-weight: 200;
+            font-size: 1.5em;
+            transition: 200ms ease;
+            margin-left: 5px;
+            color: rgb(253, 253, 253) !important;
+            .nav__div__a--logo__span{
+                font-weight: 600;
+                margin-left: -5px;
+                color: rgb(108, 171, 221);
+                }
+        }
+        .navbar-toggler{
+            border: none;
+            transition: 200ms ease;
+            &:hover{
+                color:rgb(255, 198, 89);
+            }
+            &:focus{
+                box-shadow: none;
+                /* le saqué el borde y box-shadow que se mostraba al clickear el botón de menú */
+            }
+            .navbar-toggler__i{
+                transform: scale(1.5)
+            }
+        }
+        .navbar-collapse{
+            .nav-item{
+                .nav-link{
+                    transition: 200ms ease;
+                    margin-right: 15px;
+                    &:hover{
+                        color: rgb(255, 198, 89)
+                    }
+                }
+                .li__a__ico{
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+}

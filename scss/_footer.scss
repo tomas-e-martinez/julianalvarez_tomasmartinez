@@ -1,0 +1,39 @@
+footer{
+    @include flex-direction(column);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    background: $gradiente-footer-nav;
+    .footer__div1{
+        @include flex-direction(column);
+        .footer__p1{
+            .aFooter{
+                color: map-get($estilos-links, color);
+                text-decoration: none;
+                transition: map-get($estilos-links, transition);
+                &:hover{
+                    color: map-get($estilos-links, color-hover);
+                }
+            }
+        }
+    }
+    .footer__div2{
+        @include flex-direction(column);
+        .footer__p3{
+            .aRedes{
+                color: white;
+                transition: map-get($estilos-links, transition);
+                font-size: 2.7em;
+                padding: 20px;
+                &:hover{
+                    color: map-get($estilos-links, color-hover);
+                }
+            }
+        }
+        .footer__p4{
+            margin-bottom: -15px;
+        }
+    }
+}
