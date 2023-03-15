@@ -540,3 +540,33 @@ main {
 
 .body {
   background: linear-gradient(#f0f0f0, #88c3f3); }
+
+.e404div {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20vh auto 0;
+  text-align: center; }
+  .e404div .e404div__div-h1Img {
+    display: flex;
+    flex-direction: column-reverse; }
+    .e404div .e404div__div-h1Img .e404h1 {
+      font-weight: 700;
+      font-size: 3rem; }
+    .e404div .e404div__div-h1Img .e404img {
+      width: 200px;
+      align-self: center; }
+  .e404div .e404div__div-a .e404a {
+    background-color: #1c2c5b;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    transition: 200ms ease;
+    box-shadow: 0 3px 5px grey; }
+    .e404div .e404div__div-a .e404a:hover {
+      background-color: #ffc659;
+      color: black; }
