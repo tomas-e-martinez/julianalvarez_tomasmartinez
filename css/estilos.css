@@ -96,9 +96,11 @@ footer {
       color: white;
       transition: 200ms ease;
       font-size: 2.7em;
-      padding: 20px; }
+      padding: 0 20px;
+      display: inline-block; }
       footer .footer__div2 .footer__p3 .aRedes:hover {
-        color: #e6ff00; }
+        color: #e6ff00;
+        transform: scale(120%); }
     footer .footer__div2 .footer__p4 {
       margin-bottom: -15px; }
 
@@ -552,7 +554,11 @@ main {
       width: 70%;
       background-color: white;
       border-radius: 10px;
-      box-shadow: 0 2px 5px grey; }
+      box-shadow: 0 2px 5px grey;
+      transition: 200ms ease; }
+      .sectionCamiseta .divCamisetas .divCamisetasPng .aCamisetasPng .camisetasPng:hover {
+        transform: scale(110%);
+        box-shadow: 0 2px 15px #383838; }
   .sectionCamiseta .divCamisetas .divPCamisetas {
     width: 90%;
     margin: auto; }

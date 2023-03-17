@@ -26,9 +26,11 @@ footer{
                 color: white;
                 transition: map-get($estilos-links, transition);
                 font-size: 2.7em;
-                padding: 20px;
+                padding: 0 20px;
+                display: inline-block;
                 &:hover{
                     color: map-get($estilos-links, color-hover);
+                    transform: scale(120%);
                 }
             }
         }
