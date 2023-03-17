@@ -3,13 +3,16 @@
     width: 70%;
     margin: 10px auto;
     border-radius: 0;
-    box-shadow: 0 1px 2px grey;
+    box-shadow: $box-shadow-oscuro;
     padding: 10px;
     .mediosCardImg{
         height: 60%;
         object-fit: cover;
     }
     .card-body{
+        .card-title{
+            font-weight: 700;
+        }
         .mediosCardPMedio{
             font-style: italic;
             margin-top: 5px;

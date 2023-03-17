@@ -3,21 +3,29 @@ main{
     margin-top: 12vh;
 }
 
-.welcomeImg{
-    width: 90%;
-    height: 50vh;
-    object-fit: cover;
-    background-color: white;
-    padding: 5px;
-    box-shadow: 0 2px 5px rgb(58, 58, 58);
-    animation-name: desdeIzq;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-delay: 0;
+.welcomeImgDiv{
+    .welcomeImg{
+        width: 90%;
+        height: 50vh;
+        object-fit: cover;
+        box-shadow: $box-shadow-oscuro;
+        animation-name: desdeIzq;
+        animation-iteration-count: 1;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-delay: 0;
+}
 }
 
-
+@media only screen and (max-width: 767px) {
+    .welcomeImgDiv{
+        padding-left: 0;
+        padding-right: 0;
+        .welcomeImg {
+            width: 100%;
+        }
+    }
+}
 
 .tituloContenedor{
     margin-top: 30px;
@@ -33,13 +41,14 @@ main{
     animation-delay: 0;
     .titulo{
         background-color: white;
-        box-shadow: 0 2px 2px rgb(71, 71, 71);
+        box-shadow: $box-shadow-oscuro;
         padding: 8px 5vw 8px 5vw;
         z-index: 998;
+        font-weight: 800;
     }
     .subtitulo{
         background-color: $color-primario;
-        box-shadow: 0 2px 2px rgb(71, 71, 71);
+        box-shadow: $box-shadow-oscuro;
         color: white;
         margin-top: -10px;
         padding: 2px 30px 2px 30px;

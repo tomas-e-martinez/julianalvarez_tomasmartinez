@@ -1,19 +1,35 @@
-.videoWelcome{
-    width: 85%;
-    height: 65vh;
-    object-fit: cover;
-    box-shadow: 0 2px 5px grey;
-    background-color: white;
-    padding: 5px;
+.videoWelcomeDiv{
+    .videoWelcome{
+        width: 85%;
+        height: 65vh;
+        object-fit: cover;
+        box-shadow: $box-shadow-oscuro;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .videoWelcomeDiv{
+        .videoWelcome{
+            width: 100%;
+        }
+    }
 }
 
 .sectionSorteo{
     background-color: white;
-    box-shadow: 0 2px 5px grey;
+    box-shadow: $box-shadow-oscuro;
     width: 85%;
     margin: 5vh auto;
     padding: 5vh 2vw;
     @include flex-direction(column);
+    .divTextoSorteo{
+        .tituloSorteo{
+            font-weight: 600;
+        }
+        .pSorteo{
+            font-weight: 400;
+        }
+    }
     .imgSorteo{
         width: 75%;
         height: 50vh;
@@ -110,6 +126,7 @@
 
 @media only screen and (max-width: 815px) {
     .sectionSorteo{
+        width: 100%;
         .imgSorteo {
             width: 100%;
         }
@@ -135,24 +152,22 @@
         width: 85%;
         height: 65vh;
         object-fit: cover;
-        box-shadow: 0 2px 5px grey;
+        box-shadow: $box-shadow-oscuro;
         z-index: -1;
-        padding: 5px;
-        background-color: white;
     }
     .h2Noticias{
         background-color: white;
-        box-shadow: 0 2px 5px grey;
+        box-shadow: $box-shadow-oscuro;
         width: 60%;
         margin: auto;
         position: relative;
         top: -20px;
-        font-weight: 600;
+        font-weight: 800;
     }
     .divNoticiasCard{
         .noticiasCard{
             background-color: white;
-            box-shadow: 0 2px 5px grey;
+            box-shadow: $box-shadow-oscuro;
             margin-top: 50px;
             .imgNoticiasCard{
                 width: 100%;
@@ -163,6 +178,16 @@
                 padding: 20px;
                 .tituloNoticiasCard{
                     font-size: 1.5rem;
+                    font-weight: 700;
+                }
+                .aLeerMasNoticiaCard{
+                    color: map-get($estilos-links, color);
+                    transition: map-get($estilos-links, transition);
+                    text-decoration: none;
+                    font-weight: 600;
+                    &:hover{
+                        color: map-get($estilos-links, color-hover);
+                    }
                 }
             }
         }
@@ -178,8 +203,9 @@
         padding: 10px;
         .h3Camiseta{
             background-color: white;
-            box-shadow: 0 2px 2px rgb(71, 71, 71);
+            box-shadow: $box-shadow-oscuro;
             padding: 8px 5vw 8px 5vw;
+            font-weight: 700;
         }
         .aCamiseta{
             background-color: $color-primario;
@@ -187,11 +213,13 @@
             color: white;
             margin-top: -10px;
             padding: 2px 30px 2px 30px;
+            text-decoration: none;
+            font-weight: 500;
         }
     }
     .divCamisetas{
         background: white;
-        box-shadow: 0 2px 5px grey;
+        box-shadow: $box-shadow-oscuro;
         padding: 5vh 0 0 0;
         margin: auto;
         width: 90%;
@@ -214,11 +242,12 @@
             margin: auto;
             .pCamisetas{
                 font-size: 1.1rem;
+                font-weight: 600;
                 .aClickTienda{
                     color: map-get($estilos-links, color);
                     text-decoration: none;
                     transition: map-get($estilos-links, transition);
-                    font-weight: 500;
+                    font-weight: 700;
                     &:hover{
                         color: map-get($estilos-links, color-hover);
                     }
@@ -228,7 +257,7 @@
         .iframeMapa{
             margin: 5vh 0;
             width: 60%;
-            box-shadow: 0 2px 5px grey;
+            box-shadow: $box-shadow-oscuro;
         }
     }
 }

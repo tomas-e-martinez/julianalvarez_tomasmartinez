@@ -106,18 +106,23 @@ main {
   min-height: 90vh;
   margin-top: 12vh; }
 
-.welcomeImg {
+.welcomeImgDiv .welcomeImg {
   width: 90%;
   height: 50vh;
   object-fit: cover;
-  background-color: white;
-  padding: 5px;
-  box-shadow: 0 2px 5px #3a3a3a;
+  box-shadow: 0 2px 5px black;
   animation-name: desdeIzq;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 2s;
   animation-delay: 0; }
+
+@media only screen and (max-width: 767px) {
+  .welcomeImgDiv {
+    padding-left: 0;
+    padding-right: 0; }
+    .welcomeImgDiv .welcomeImg {
+      width: 100%; } }
 
 .tituloContenedor {
   margin-top: 30px;
@@ -134,12 +139,13 @@ main {
   animation-delay: 0; }
   .tituloContenedor .titulo {
     background-color: white;
-    box-shadow: 0 2px 2px #474747;
+    box-shadow: 0 2px 5px black;
     padding: 8px 5vw 8px 5vw;
-    z-index: 998; }
+    z-index: 998;
+    font-weight: 800; }
   .tituloContenedor .subtitulo {
     background-color: #1c2c5b;
-    box-shadow: 0 2px 2px #474747;
+    box-shadow: 0 2px 5px black;
     color: white;
     margin-top: -10px;
     padding: 2px 30px 2px 30px; }
@@ -148,30 +154,35 @@ main {
   padding: 10px 10px;
   color: white;
   background-color: #1c2c5b;
-  box-shadow: 0 2px 2px #474747;
+  box-shadow: 0 2px 5px black;
   margin: auto;
-  width: 40%; }
+  width: 40%;
+  font-weight: 600; }
 
 @media only screen and (max-width: 767px) {
   .h3Bio {
     width: 100%; } }
 
 .row .imgBio {
-  padding: 5px;
+  padding: 10px;
   background-color: white;
   width: 75%;
   height: 45vh;
   margin-top: 5vh;
   margin-bottom: 5vh;
   object-fit: cover;
-  box-shadow: 0 2px 5px #2c2c2c; }
+  box-shadow: 0 2px 5px black; }
+
+.row .videoBio {
+  padding: 0; }
 
 .row .pBio {
+  color: white;
   padding: 10px 0 20px;
   width: 75%;
   margin: 10px auto;
   font-size: 1.4em;
-  font-weight: 500; }
+  font-weight: 800; }
 
 .row .imgBioCol12 {
   height: 75vh; }
@@ -190,7 +201,7 @@ main {
 
 .h2Bio {
   background-color: white;
-  box-shadow: 0 2px 2px #474747;
+  box-shadow: 0 2px 5px black;
   padding: 8px 5vw 8px 5vw;
   width: 60%;
   margin: 0 auto 5vh;
@@ -200,7 +211,11 @@ main {
   width: 80%;
   height: 45vh;
   object-fit: cover;
-  box-shadow: 0px 1px 5px #333333; }
+  box-shadow: 0 2px 5px black; }
+
+@media only screen and (max-width: 767px) {
+  .imgEstadisticas {
+    width: 100%; } }
 
 .h3DivEquipoEstadisticas {
   padding: 10px;
@@ -208,7 +223,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #1c2c5b;
-  box-shadow: 0 2px 2px #474747;
+  box-shadow: 0 2px 5px black;
   width: 45vw;
   height: 10vh;
   margin: 0 auto 5vh; }
@@ -217,7 +232,8 @@ main {
   .h3DivEquipoEstadisticas .h3EquipoEstadisticas {
     color: white;
     flex-basis: 40%;
-    padding-left: 5px; }
+    padding-left: 5px;
+    font-weight: 600; }
 
 @media only screen and (max-width: 767px) {
   .h3DivEquipoEstadisticas {
@@ -225,7 +241,7 @@ main {
 
 .tableEstadisticas {
   font-weight: 500;
-  box-shadow: 0px 1px 3px #333333; }
+  box-shadow: 0 2px 5px black; }
   .tableEstadisticas .tablaBold {
     font-weight: 800; }
 
@@ -252,13 +268,15 @@ main {
 
 .containerContacto {
   background-color: white;
-  box-shadow: 0 2px 2px #2c2c2c;
+  box-shadow: 0 2px 5px black;
   margin-bottom: 5vh;
   animation-name: desdeIzq;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 2s;
   animation-delay: 0; }
+  .containerContacto .tituloContacto {
+    font-weight: 600; }
   .containerContacto .contactoDivP {
     font-size: 1.2em;
     font-style: italic; }
@@ -327,11 +345,13 @@ main {
   width: 70%;
   margin: 10px auto;
   border-radius: 0;
-  box-shadow: 0 1px 2px grey;
+  box-shadow: 0 2px 5px black;
   padding: 10px; }
   .mediosCard .mediosCardImg {
     height: 60%;
     object-fit: cover; }
+  .mediosCard .card-body .card-title {
+    font-weight: 700; }
   .mediosCard .card-body .mediosCardPMedio {
     font-style: italic;
     margin-top: 5px;
@@ -350,22 +370,28 @@ main {
       color: black;
       background-color: #ffc659; }
 
-.videoWelcome {
+.videoWelcomeDiv .videoWelcome {
   width: 85%;
   height: 65vh;
   object-fit: cover;
-  box-shadow: 0 2px 5px grey;
-  background-color: white;
-  padding: 5px; }
+  box-shadow: 0 2px 5px black; }
+
+@media only screen and (max-width: 767px) {
+  .videoWelcomeDiv .videoWelcome {
+    width: 100%; } }
 
 .sectionSorteo {
   background-color: white;
-  box-shadow: 0 2px 5px grey;
+  box-shadow: 0 2px 5px black;
   width: 85%;
   margin: 5vh auto;
   padding: 5vh 2vw;
   display: flex;
   flex-direction: column; }
+  .sectionSorteo .divTextoSorteo .tituloSorteo {
+    font-weight: 600; }
+  .sectionSorteo .divTextoSorteo .pSorteo {
+    font-weight: 400; }
   .sectionSorteo .imgSorteo {
     width: 75%;
     height: 50vh;
@@ -443,8 +469,10 @@ main {
           color: black; }
 
 @media only screen and (max-width: 815px) {
-  .sectionSorteo .imgSorteo {
-    width: 100%; } }
+  .sectionSorteo {
+    width: 100%; }
+    .sectionSorteo .imgSorteo {
+      width: 100%; } }
 
 @media only screen and (max-width: 815px) {
   .sectionSorteo .formSorteo .formSorteoDiv .formSorteoDiv__div .textAreaFormSorteo {
@@ -454,23 +482,21 @@ main {
   width: 85%;
   height: 65vh;
   object-fit: cover;
-  box-shadow: 0 2px 5px grey;
-  z-index: -1;
-  padding: 5px;
-  background-color: white; }
+  box-shadow: 0 2px 5px black;
+  z-index: -1; }
 
 .asideNoticias .h2Noticias {
   background-color: white;
-  box-shadow: 0 2px 5px grey;
+  box-shadow: 0 2px 5px black;
   width: 60%;
   margin: auto;
   position: relative;
   top: -20px;
-  font-weight: 600; }
+  font-weight: 800; }
 
 .asideNoticias .divNoticiasCard .noticiasCard {
   background-color: white;
-  box-shadow: 0 2px 5px grey;
+  box-shadow: 0 2px 5px black;
   margin-top: 50px; }
   .asideNoticias .divNoticiasCard .noticiasCard .imgNoticiasCard {
     width: 100%;
@@ -479,7 +505,15 @@ main {
   .asideNoticias .divNoticiasCard .noticiasCard .divNoticiasCardTexto {
     padding: 20px; }
     .asideNoticias .divNoticiasCard .noticiasCard .divNoticiasCardTexto .tituloNoticiasCard {
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      font-weight: 700; }
+    .asideNoticias .divNoticiasCard .noticiasCard .divNoticiasCardTexto .aLeerMasNoticiaCard {
+      color: #6cabdd;
+      transition: 200ms ease;
+      text-decoration: none;
+      font-weight: 600; }
+      .asideNoticias .divNoticiasCard .noticiasCard .divNoticiasCardTexto .aLeerMasNoticiaCard:hover {
+        color: #ffc659; }
 
 .sectionCamiseta .contenedorDivCamiseta {
   margin-top: 30px;
@@ -490,18 +524,21 @@ main {
   padding: 10px; }
   .sectionCamiseta .contenedorDivCamiseta .h3Camiseta {
     background-color: white;
-    box-shadow: 0 2px 2px #474747;
-    padding: 8px 5vw 8px 5vw; }
+    box-shadow: 0 2px 5px black;
+    padding: 8px 5vw 8px 5vw;
+    font-weight: 700; }
   .sectionCamiseta .contenedorDivCamiseta .aCamiseta {
     background-color: #1c2c5b;
     box-shadow: 0 2px 2px #474747;
     color: white;
     margin-top: -10px;
-    padding: 2px 30px 2px 30px; }
+    padding: 2px 30px 2px 30px;
+    text-decoration: none;
+    font-weight: 500; }
 
 .sectionCamiseta .divCamisetas {
   background: white;
-  box-shadow: 0 2px 5px grey;
+  box-shadow: 0 2px 5px black;
   padding: 5vh 0 0 0;
   margin: auto;
   width: 90%; }
@@ -519,18 +556,19 @@ main {
     width: 90%;
     margin: auto; }
     .sectionCamiseta .divCamisetas .divPCamisetas .pCamisetas {
-      font-size: 1.1rem; }
+      font-size: 1.1rem;
+      font-weight: 600; }
       .sectionCamiseta .divCamisetas .divPCamisetas .pCamisetas .aClickTienda {
         color: #6cabdd;
         text-decoration: none;
         transition: 200ms ease;
-        font-weight: 500; }
+        font-weight: 700; }
         .sectionCamiseta .divCamisetas .divPCamisetas .pCamisetas .aClickTienda:hover {
           color: #ffc659; }
   .sectionCamiseta .divCamisetas .iframeMapa {
     margin: 5vh 0;
     width: 60%;
-    box-shadow: 0 2px 5px grey; }
+    box-shadow: 0 2px 5px black; }
 
 @media only screen and (max-width: 815px) {
   .sectionCamiseta .divCamisetas {
@@ -539,9 +577,12 @@ main {
       width: 90%; } }
 
 .body {
-  background: linear-gradient(#f0f0f0, #88c3f3); }
+  background-image: url(../assets/img/body-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
 .e404div {
+  color: white;
   width: 70vw;
   display: flex;
   flex-direction: column;
@@ -566,7 +607,9 @@ main {
     border-radius: 5px;
     color: white;
     transition: 200ms ease;
-    box-shadow: 0 3px 5px grey; }
+    box-shadow: 0 2px 5px black; }
     .e404div .e404div__div-a .e404a:hover {
       background-color: #ffc659;
       color: black; }
+  .e404div .e404p {
+    font-size: 1.3rem; }

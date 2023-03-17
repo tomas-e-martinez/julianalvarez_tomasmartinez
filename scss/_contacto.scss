@@ -1,12 +1,15 @@
 .containerContacto{
     background-color: white;
-    box-shadow: 0 2px 2px rgb(44,44,44);
+    box-shadow: $box-shadow-oscuro;
     margin-bottom: 5vh;
     animation-name: desdeIzq;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 2s;
     animation-delay: 0;
+    .tituloContacto{
+        font-weight: 600;
+    }
     .contactoDivP{
         font-size: 1.2em;
         font-style: italic;

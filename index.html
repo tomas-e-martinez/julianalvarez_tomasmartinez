@@ -8,6 +8,7 @@
     <meta name="keywords"  content="JULIAN, ALVAREZ, FUTBOL, QATAR, ARGENTINA, RIVER, PLATE, DELANTERO, ARGENTINO, GOLES, GOLEADOR, GOL, ARAÑA">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/43d4fe5a6b.js" crossorigin="anonymous"></script>
     <title>Web Oficial Julián Álvarez</title>
@@ -45,7 +46,7 @@
     <main>
         <div class="container-fluid text-center my-5">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 welcomeImgDiv">
                     <img class="welcomeImg" src="./assets/img/iniciowelcome.jpg" alt="inicio welcome">
                     <div class="tituloContenedor">
                         <h1 class="titulo" >Julián Álvarez</span></h1>
@@ -54,15 +55,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-sm-12">
-                        <video class="videoWelcome" src="./assets/video/julianalvarezwelcome.mp4" autoplay muted loop></video>
-                        <section class="sectionSorteo"> 
+                <div class="col-lg-8 col-sm-12 videoWelcomeDiv">
+                        <video data-aos="fade-right" class="videoWelcome" src="./assets/video/julianalvarezwelcome.mp4" autoplay muted loop></video>
+                        <section class="sectionSorteo" data-aos="fade-right"> 
                             <img class="imgSorteo" src="./assets/img/juliancopasorteo.jpg" alt="julian levanta la copa del mundo">
                             <div class="divTextoSorteo">
                                 <h2 class="tituloSorteo"><span class="tituloSorteoSpan1">¡GANATE LA CAMISETA </span><span class="tituloSorteoSpan2">AUTOGRAFIADA DE JULIÁN!</span></h2>
                                 <p class="pSorteo">Si vivís en Argentina, completá tus datos, contanos tu gol favorito del Araña, ¡y estarás participando por una camiseta autografiada de la selección!</p>
                             </div>
-                                <form class="formSorteo">
+                                <form class="formSorteo" data-aos="fade-right">
                                     <div class="formSorteoDiv">
                                         <div class="formSorteoDiv__div ">
                                             <input class="inputFormSorteo " type="text" placeholder="Nombre/s" required>
@@ -131,13 +132,13 @@
                         </section>
                 </div>
                 <div class="col-12 order-3">
-                    <section class="sectionCamiseta">
-                        <div class="contenedorDivCamiseta">
-                            <h3 class="h3Camiseta">¡OBTENÉ TU CAMISETA!</h3>
+                    <section class="sectionCamiseta" >
+                        <div class="contenedorDivCamiseta" data-aos="fade-up">
+                            <h3 class="h3Camiseta" >¡OBTENÉ TU CAMISETA!</h3>
                             <a class="aCamiseta" href="https://shop.mancity.com/es/comprar-por-jugador/masculino/atacante/julian-alvarez/?cgid=shopbyplayer-mensteam-forwards-julianalvarez&pmin=0%2c00&start=0&sz=36" target="_blank">TIENDA ONLINE</a>
                         </div>
-                        <div class="divCamisetas">
-                            <div class="divCamisetasPng">
+                        <div class="divCamisetas" data-aos="fade-up">
+                            <div class="divCamisetasPng" data-aos="fade-up">
                                 <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-ni%C3%B1o-1%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221511-JALVAREZ-teamlightblue-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta1.png" alt="camiseta titular manchester city"></a>
                                 <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-2%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221522-JALVAREZ-black-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta2.png" alt="camiseta suplente manchester city"></a>
                                 <a class="aCamisetasPng" href="https://shop.mancity.com/es/camiseta-3%C2%AA-equipaci%C3%B3n-manchester-city-2022-23-con-estampado-de-j.-alvarez/701221530-JALVAREZ-fizzylight%2Fparisiannight-PremierLeague.html" target="_blank"><img class="camisetasPng" src="./assets/img/camiseta3.png" alt="camiseta alternativa manchester city"></a>
@@ -146,40 +147,40 @@
                                 <p class="pCamisetas">Haz <a class="aClickTienda" href="https://shop.mancity.com/es/comprar-por-jugador/masculino/atacante/julian-alvarez/?cgid=shopbyplayer-mensteam-forwards-julianalvarez&pmin=0%2c00&start=0&sz=36" target="_blank">click aquí</a> para ingresar a nuestra tienda online, donde podrás elegir entre una gran variedad de productos.</p>
                                 <p class="pCamisetas">O bien visita nuestra tienda física en el Etihad Stadium, serás recibido/a de maravilla por nuestro personal.</p>
                             </div>
-                            <iframe class="iframeMapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3992.8903901269628!2d-2.2034193382275054!3d53.48299151039588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x549a8dcce67a876a!2sEstadio%20Ciudad%20de%20M%C3%A1nchester!5e0!3m2!1ses-419!2sar!4v1674407305666!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe class="iframeMapa" data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3992.8903901269628!2d-2.2034193382275054!3d53.48299151039588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x549a8dcce67a876a!2sEstadio%20Ciudad%20de%20M%C3%A1nchester!5e0!3m2!1ses-419!2sar!4v1674407305666!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </section>
                 </div>
                 
                 <div class="col-lg-4 col-sm-12 order-2">
                     <aside class="asideNoticias d-flex flex-column">
-                        <div class="divContenedorBarraImgNoticias">
+                        <div class="divContenedorBarraImgNoticias" data-aos="fade-left">
                             <img class="imgNoticias" src="./assets/img/messi-julian-alvarez.jpg" alt="messi y julian alvarez">
                             <div class="divBarraNoticias">
-                                <h2 class="h2Noticias">NOTICIAS</h2>
+                                <h2 class="h2Noticias" data-aos="fade-left">NOTICIAS</h2>
                             </div>
                         </div>
                         <div class="divNoticiasCard w-75 d-flex flex-column mx-auto">
-                                <div class="noticiasCard">
+                                <div class="noticiasCard" data-aos="fade-left">
                                     <div class="divNoticiasCardTexto">
                                         <h1 class="tituloNoticiasCard">ÁLVAREZ LIDERA LA REMONTADA</h1>
                                         <p class="pNoticiasCard">Julián salio de titular a la cancha, y en el primer tiempo se encontró con dos errores claves de Ederson que costaron dos goles. Fue Álvarez quien halló el rebote para el primer gol que daría inicio a una remontada <a class="aLeerMasNoticiaCard" href="./pages/404.html">[...]</a></p>
                                     </div>
-                                    <img class="imgNoticiasCard" src="./assets/img/alvarezarticle1.jpg" alt="gol julian alvarez tottenham">
+                                    <img class="imgNoticiasCard" data-aos="fade-left" src="./assets/img/alvarezarticle1.jpg" alt="gol julian alvarez tottenham">
                                 </div>
-                                <div class="noticiasCard">
+                                <div class="noticiasCard" data-aos="fade-left">
                                     <div class="divNoticiasCardTexto">
                                         <h1 class="tituloNoticiasCard">GRAN GESTO DE JULIÁN CON HINCHA DE RIVER</h1>
                                         <p class="pNoticiasCard">Al finalizar el encuentro ante Tottenham, Álvarez se acercó a un hincha de River que fue a verlo especialmente a él con un camperón del Millonario. El delantero reconoció el cariño de este fanático y le regaló el short con el que había disputado el duelo <a class="aLeerMasNoticiaCard" href="./pages/404.html">[...]</a></p>
                                     </div>
-                                    <img class="imgNoticiasCard" src="./assets/img/alvarezarticle2.jpg" alt="julian regala su pantalon">
+                                    <img class="imgNoticiasCard" data-aos="fade-left" src="./assets/img/alvarezarticle2.jpg" alt="julian regala su pantalon">
                                 </div>
-                                <div class="noticiasCard">
+                                <div class="noticiasCard" data-aos="fade-left">
                                     <div class="divNoticiasCardTexto">
                                         <h1 class="tituloNoticiasCard">LOS NÚMEROS DE JULIÁN EN EL CITY</h1>
                                         <p class="pNoticiasCard">La Juliánmania dice presente en Manchester. El delantero de la Selección tiene números más que interesantes en poco más de seis meses de estadía en Inglaterra y deja en claro que tiene mucho para aportarle a Pep y compañía. <a class="aLeerMasNoticiaCard" href="./pages/404.html">[...]</a></p>
                                     </div>
-                                    <img class="imgNoticiasCard" src="./assets/img/alvarezarticle3.jpg" alt="estadisticas julian alvarez">
+                                    <img class="imgNoticiasCard" data-aos="fade-left" src="./assets/img/alvarezarticle3.jpg" alt="estadisticas julian alvarez">
                                 </div>
                         </div>
                     </aside>
@@ -200,6 +201,10 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>
