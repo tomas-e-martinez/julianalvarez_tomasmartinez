@@ -26,11 +26,11 @@
             border-radius: 5px;
             font-size: 1.3em;
             padding: 5px 15px 5px 15px;
-            font-weight: 200;
+            font-weight: 500;
             transition: 150ms ease;
             &:hover{
                     color: black;
-                    background-color:rgb(255, 198, 89) ;
+                    background-color:map-get($estilos-links, color-hover) ;
             }
         }
         

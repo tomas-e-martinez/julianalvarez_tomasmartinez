@@ -50,7 +50,7 @@
     border: none;
     transition: 200ms ease; }
     .navbar .nav__div .navbar-toggler:hover {
-      color: #ffc659; }
+      color: #e6ff00; }
     .navbar .nav__div .navbar-toggler:focus {
       box-shadow: none;
       /* le saqué el borde y box-shadow que se mostraba al clickear el botón de menú */ }
@@ -60,7 +60,7 @@
     transition: 200ms ease;
     margin-right: 15px; }
     .navbar .nav__div .navbar-collapse .nav-item .nav-link:hover {
-      color: #ffc659; }
+      color: #e6ff00; }
   .navbar .nav__div .navbar-collapse .nav-item .li__a__ico {
     margin-right: 6px; }
 
@@ -88,7 +88,7 @@ footer {
       text-decoration: none;
       transition: 200ms ease; }
       footer .footer__div1 .footer__p1 .aFooter:hover {
-        color: #ffc659; }
+        color: #e6ff00; }
   footer .footer__div2 {
     display: flex;
     flex-direction: column; }
@@ -98,7 +98,7 @@ footer {
       font-size: 2.7em;
       padding: 20px; }
       footer .footer__div2 .footer__p3 .aRedes:hover {
-        color: #ffc659; }
+        color: #e6ff00; }
     footer .footer__div2 .footer__p4 {
       margin-bottom: -15px; }
 
@@ -313,7 +313,7 @@ main {
         transition: 200ms ease;
         font-weight: 500; }
         .containerContacto .formContacto .formCheckboxDiv .aTycContacto:hover {
-          color: #ffc659; }
+          color: #e6ff00; }
       .containerContacto .formContacto .formCheckboxDiv .formCheckboxInput {
         margin-right: 5px; }
     .containerContacto .formContacto .formButtonsDiv {
@@ -323,7 +323,7 @@ main {
       margin-top: 30px !important; }
       .containerContacto .formContacto .formButtonsDiv .formButton {
         padding: 5px 10px 5px 10px;
-        font-weight: 500; }
+        font-weight: 600; }
       .containerContacto .formContacto .formButtonsDiv .formButtonReset, .containerContacto .formContacto .formButtonsDiv .formButtonSubmit {
         background-color: #6cabdd;
         border: none;
@@ -338,7 +338,7 @@ main {
         background-color: #1c2c5b;
         color: white; }
         .containerContacto .formContacto .formButtonsDiv .formButtonSubmit:hover {
-          background-color: #ffc659;
+          background-color: #e6ff00;
           color: black; }
 
 .mediosCard {
@@ -365,11 +365,11 @@ main {
     border-radius: 5px;
     font-size: 1.3em;
     padding: 5px 15px 5px 15px;
-    font-weight: 200;
+    font-weight: 500;
     transition: 150ms ease; }
     .mediosCard .card-body .aMediosCard:hover {
       color: black;
-      background-color: #ffc659; }
+      background-color: #e6ff00; }
 
 .videoWelcomeDiv .videoWelcome {
   width: 85%;
@@ -443,7 +443,7 @@ main {
           transition: 200ms ease;
           font-weight: 500; }
           .sectionSorteo .formSorteo .formCheckboxDivContenedor .formCheckboxDiv .aTyc:hover {
-            color: #ffc659; }
+            color: #e6ff00; }
     .sectionSorteo .formSorteo .formButtonsDiv {
       display: flex;
       flex-direction: row;
@@ -451,7 +451,7 @@ main {
       margin-top: 30px !important; }
       .sectionSorteo .formSorteo .formButtonsDiv .formButton {
         padding: 5px 10px 5px 10px;
-        font-weight: 500; }
+        font-weight: 600; }
       .sectionSorteo .formSorteo .formButtonsDiv .formButtonReset, .sectionSorteo .formSorteo .formButtonsDiv .formButtonSubmit {
         background-color: #6cabdd;
         border: none;
@@ -466,7 +466,7 @@ main {
         background-color: #1c2c5b;
         color: white; }
         .sectionSorteo .formSorteo .formButtonsDiv .formButtonSubmit:hover {
-          background-color: #ffc659;
+          background-color: #e6ff00;
           color: black; }
 
 @media only screen and (max-width: 815px) {
@@ -514,7 +514,7 @@ main {
       text-decoration: none;
       font-weight: 600; }
       .asideNoticias .divNoticiasCard .noticiasCard .divNoticiasCardTexto .aLeerMasNoticiaCard:hover {
-        color: #ffc659; }
+        color: #e6ff00; }
 
 .sectionCamiseta .contenedorDivCamiseta {
   margin-top: 30px;
@@ -565,7 +565,7 @@ main {
         transition: 200ms ease;
         font-weight: 700; }
         .sectionCamiseta .divCamisetas .divPCamisetas .pCamisetas .aClickTienda:hover {
-          color: #ffc659; }
+          color: #e6ff00; }
   .sectionCamiseta .divCamisetas .iframeMapa {
     margin: 5vh 0;
     width: 60%;
@@ -610,7 +610,7 @@ main {
     transition: 200ms ease;
     box-shadow: 0 2px 5px black; }
     .e404div .e404div__div-a .e404a:hover {
-      background-color: #ffc659;
+      background-color: #e6ff00;
       color: black; }
   .e404div .e404p {
     font-size: 1.3rem; }

@@ -34,7 +34,7 @@
             border: none;
             transition: 200ms ease;
             &:hover{
-                color:rgb(255, 198, 89);
+                color: map-get($estilos-links, color-hover );
             }
             &:focus{
                 box-shadow: none;
@@ -50,7 +50,7 @@
                     transition: 200ms ease;
                     margin-right: 15px;
                     &:hover{
-                        color: rgb(255, 198, 89)
+                        color: map-get($estilos-links, color-hover )
                     }
                 }
                 .li__a__ico{
