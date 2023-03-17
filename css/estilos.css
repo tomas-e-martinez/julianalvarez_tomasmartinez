@@ -532,12 +532,17 @@ main {
     font-weight: 700; }
   .sectionCamiseta .contenedorDivCamiseta .aCamiseta {
     background-color: #1c2c5b;
-    box-shadow: 0 2px 2px #474747;
+    box-shadow: 0 2px 5px black;
     color: white;
     margin-top: -10px;
     padding: 2px 30px 2px 30px;
     text-decoration: none;
-    font-weight: 500; }
+    font-weight: 500;
+    transition: 200ms ease; }
+    .sectionCamiseta .contenedorDivCamiseta .aCamiseta:hover {
+      background-color: #e6ff00;
+      color: black;
+      transform: scale(110%); }
 
 .sectionCamiseta .divCamisetas {
   background: white;

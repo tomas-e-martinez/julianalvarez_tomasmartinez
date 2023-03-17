@@ -209,12 +209,18 @@
         }
         .aCamiseta{
             background-color: $color-primario;
-            box-shadow: 0 2px 2px rgb(71, 71, 71);
+            box-shadow: $box-shadow-oscuro;
             color: white;
             margin-top: -10px;
             padding: 2px 30px 2px 30px;
             text-decoration: none;
             font-weight: 500;
+            transition: map-get($estilos-links, transition );
+            &:hover{
+                background-color: map-get($estilos-links, color-hover);
+                color: black;
+                transform: scale(110%);
+            }
         }
     }
     .divCamisetas{
