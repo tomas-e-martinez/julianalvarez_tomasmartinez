@@ -36,6 +36,20 @@ footer{
         }
         .footer__p4{
             margin-bottom: -15px;
+            .aGithub{
+                text-decoration: none;
+                color: map-get($estilos-links, color);
+                transition: map-get($estilos-links, transition);
+                padding: 0 3px;
+                display: inline-block;
+                &:hover{
+                    color: map-get($estilos-links, color-hover);
+                    transform: scale(102%);
+                }
+                .fa-github{
+                    margin-right: 4px;
+                }
+            }
         }
     }
 }
